@@ -8,7 +8,7 @@ class CircularButton extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.white,
+        color: Colors.red,
         border: const Border(
           left: BorderSide(
             color: Colors.green,
@@ -17,7 +17,7 @@ class CircularButton extends StatelessWidget {
         ),
       ),
       height: 50,
-      child: const Text("Botao"),
+      child: const Text("Botao", style: TextStyle(color: Colors.amber, fontSize: 18),),
     );
   }
 }
