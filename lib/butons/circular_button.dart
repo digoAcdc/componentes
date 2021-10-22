@@ -5,6 +5,6 @@ class CircularButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(child: Text("botao teste1"), onPressed: (){},);
+    return OutlinedButton(child: Text("botao teste"), onPressed: (){},);
   }
 }
