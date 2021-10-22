@@ -6,18 +6,18 @@ class CircularButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        color: Colors.red,
-        border: const Border(
-          left: BorderSide(
+      width: MediaQuery.of(context).size.width,
+        height: 50,
+        decoration: new BoxDecoration(
             color: Colors.green,
-            width: 3,
-          ),
+            borderRadius: new BorderRadius.only(
+              topLeft: const Radius.circular(40.0),
+              topRight: const Radius.circular(40.0),
+            )
         ),
-      ),
-      height: 50,
-      child: const Text("Botao", style: TextStyle(color: Colors.amber, fontSize: 18),),
+        child: new Center(
+          child: new Text("Hi modal sheet"),
+        )
     );
   }
 }
